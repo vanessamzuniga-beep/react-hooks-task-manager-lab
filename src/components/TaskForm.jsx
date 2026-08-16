@@ -9,12 +9,12 @@ function TaskForm() {
 
   const inputId = useId()
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
     if (taskName.trim() === "") return;
 
     // creates the new task
-    addTask({
+    await addTask({
       title: taskName,
       completed: false,
     })
