@@ -10,7 +10,6 @@ function SearchBar() {
     setQuery(searchRef.current.value);
   }
 
-
   return (
     <div>
       <input
